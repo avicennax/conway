@@ -55,7 +55,7 @@ class GameOfLife:
                 alive.append(cell)
 
         # In case of a runtime error keep self.alive consistent.
-        self.alive = alive
+        self.alive = set(alive)
         return alive
 
     def run(self, K: int = 10) -> Set[Cell]:

@@ -24,4 +24,4 @@ from game_of_life import GameOfLife
 def test_game_of_life(seed: List[GameOfLife.Cell], out: Set[GameOfLife.Cell], k: int):
     g = GameOfLife(seed)
     g.run(k)
-    assert set(g.alive) == out
+    assert g.alive == out
