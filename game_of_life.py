@@ -56,7 +56,7 @@ class GameOfLife:
 
         # In case of a runtime error keep self.alive consistent.
         self.alive = set(alive)
-        return alive
+        return self.alive
 
     def run(self, K: int = 10) -> Set[Cell]:
         if not self.initialized:
